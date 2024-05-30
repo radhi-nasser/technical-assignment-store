@@ -1,8 +1,7 @@
-import { lazy } from "./lazy";
-import { Restrict, Store } from "./store";
+import { Restrict } from "./decorators/restrict";
+import { lazy } from "./misc/lazy";
+import { Store } from "./store";
 import { UserStore } from "./userStore";
-
-
 
 export class AdminStore extends Store {
   @Restrict("r")
